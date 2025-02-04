@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7f</title>
+</head>
+<body>
+    <script>
+        function convertToTemperature(degrees,unit) {
+
+            const result1 = (degrees*9/5)+32;
+            const result2 = (degrees-32)*5/9;
+
+            if (unit==='C') {
+                console.log(`${result1}F`);
+            } else if (unit==='F') {
+                console.log(`${result2}C`);
+            }
+        }
+
+        convertToTemperature(25,'C');
+        convertToTemperature(86,'F');
+
+    </script>
+</body>
+</html>

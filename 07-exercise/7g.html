@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7g</title>
+</head>
+<body>
+    <script>
+        function convertLength(Length, from , to) {
+            if (from==='miles' && to==='km') {
+                const result1 = Length*1.6;
+                console.log(`${result1}km`);
+            }else if (from==='km' && to==='miles') {
+                const result2 = Length*5/8;
+                console.log(`${result2}miles`);
+            }else if (from==='km' && to==='km') {
+                console.log(`${Length}km`);
+            }
+        }
+
+        convertLength(50,'miles','km');
+        convertLength(32,'km','miles');
+        convertLength(50,'km','km');
+
+    </script>
+</body>
+</html>
