@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Projects</title>
+</head>
+<body>
+
+    <p>
+        Youtube subscribe button
+    </p>
+    <button onclick="
+        
+        "        
+        class = "js-button";>subscribe</button>
+        
+
+    <p>Amazon Shipping Calculator</p>
+    <input type="number" placeholder="Cost of order">
+    <button>Calculate</button>
+
+    <script>
+
+        
+
+        function subscribe() {
+            const buttonElement = document.querySelector('.js-button');
+            if (buttonElement.innerText === 'subscribe') {
+                buttonElement.innerText = 'subscribed';
+            } else{
+                buttonElement.innerText = 'subscribe';
+            }
+        }
+    </script>
+</body>
+</html>
