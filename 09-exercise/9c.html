@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9c</title>
+</head>
+<body>
+    <button class="heads" onclick="clickingButton('.heads')">heads</button>
+    <button class="tails" onclick="clickingButton('.tails')">tails</button>
+    <p class="details"></p>
+
+    <script>
+        function clickingButton(button) {
+            if (button === '.heads') {
+                document.querySelector('.details').innerHTML = 'You chose heads';
+            }else{
+                document.querySelector('.details').innerHTML = 'You chose tails';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9d</title>
+</head>
+<body>
+
+    <input type="text" class="name" onkeydown="nameKeydown(event)">
+    <button class="submit" onclick="enterName()">submit</button>
+    <p class="js-name"></p>
+
+    <script>
+        function enterName() {
+            const name = document.querySelector('.name');
+            document.querySelector('.js-name').innerHTML=`Your name is ${name.value}`;
+        }
+        function nameKeydown(event) {
+            if (event.key === 'Enter') {
+                enterName();
+            }
+        }
+    </script>
+</body>
+</html>
