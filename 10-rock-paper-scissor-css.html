@@ -14,7 +14,19 @@
         .title{
             font-size: 30px;
             font-weight: bold;
-            
+        }
+        .move-icon{
+            height: 50px;
+            /* background-color: rgb(25, 25, 25); */
+        }
+        .move-button{
+            background-color: transparent;
+            border: solid;
+            padding: 33px;
+            border-radius: 100%;
+            margin-right: 10px;
+            border-color: white;
+            border-width: 3px;
         }
     </style>
 </head>
@@ -22,15 +34,15 @@
     <p class="title">Rock-Paper-Scissors</p>
     <button onclick="
         playGame('Rock');
-    ">Rock</button>
+    " class="move-button"><img src="rock-emoji.png" class="move-icon" alt=""></button>
 
     <button onclick="
         playGame('Paper');
-    ">Paper</button>
+    " class="move-button"><img src="paper-emoji.png" class="move-icon" alt=""></button>
 
     <button onclick="
         playGame('Scissors');
-    ">Scissors</button>
+    " class="move-button"><img src="scissors-emoji.png" class="move-icon" alt=""></button>
 
     <p class="js-result"></p>
     <p class="js-moves"></p>
